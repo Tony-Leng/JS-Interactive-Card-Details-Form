@@ -4,7 +4,9 @@
 
 
 @media only screen and (max-width: 426px) {
-  body {
-    background-color: lightblue;
+
+
+  .hide {
+    display: none;
   }
 }
