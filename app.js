@@ -24,3 +24,7 @@ cardholdernameinput.addEventListener('input', () => {
 expiremonthinput.addEventListener('input', () => {
   expiremonthdisplay.innerText = expiremonthinput.value;
 })
+
+expireyearinput.addEventListener('input', () => {
+  expireyeardisplay.innerText = expireyearinput.value;
+})
