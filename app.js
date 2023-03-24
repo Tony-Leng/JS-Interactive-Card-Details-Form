@@ -11,6 +11,7 @@ const expireyearinput = document.querySelector('#expire-date-year');
 const expireyeardisplay = document.querySelector('#card-expiry-year');
 const cvcinput = document.querySelector('#card-cvc-input');
 const cvcdisplay = document.querySelector('#card-cvc-display');
+const continuebtn = document.querySelector('#continue');
 
 confirm.addEventListener('click', () => {
   thankyou.classList.remove('hide');
@@ -31,4 +32,8 @@ expireyearinput.addEventListener('input', () => {
 
 cvcinput.addEventListener('input', () => {
   cvcdisplay.innerText = cvcinput.value;
+})
+
+continuebtn.addEventListener('click', () => {
+  location.reload();
 })
