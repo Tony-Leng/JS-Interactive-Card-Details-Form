@@ -28,3 +28,7 @@ expiremonthinput.addEventListener('input', () => {
 expireyearinput.addEventListener('input', () => {
   expireyeardisplay.innerText = expireyearinput.value;
 })
+
+cvcinput.addEventListener('input', () => {
+  cvcdisplay.innerText = cvcinput.value;
+})
