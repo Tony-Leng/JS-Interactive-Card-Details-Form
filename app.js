@@ -16,6 +16,7 @@ const continuebtn = document.querySelector('#continue');
 confirm.addEventListener('click', () => {
   thankyou.classList.remove('hide');
   userinfo.classList.add('hide');
+  // need to implement if statement to ensure all fields are entered //
 })
 
 cardholdernameinput.addEventListener('input', () => {
@@ -24,14 +25,17 @@ cardholdernameinput.addEventListener('input', () => {
 
 expiremonthinput.addEventListener('input', () => {
   expiremonthdisplay.innerText = expiremonthinput.value;
+  // how to stop at 2 numbers?
 })
 
 expireyearinput.addEventListener('input', () => {
   expireyeardisplay.innerText = expireyearinput.value;
+  // how to stop at 2 numbers?
 })
 
 cvcinput.addEventListener('input', () => {
   cvcdisplay.innerText = cvcinput.value;
+  // how to stop at 3 numbers?
 })
 
 continuebtn.addEventListener('click', () => {
