@@ -12,6 +12,8 @@ const expireyeardisplay = document.querySelector('#card-expiry-year');
 const cvcinput = document.querySelector('#card-cvc-input');
 const cvcdisplay = document.querySelector('#card-cvc-display');
 const continuebtn = document.querySelector('#continue');
+const cardnumberinput = document.querySelector('#card-num-input');
+const cardnumberdisplay = document.querySelector('#cardNum');
 
 confirm.addEventListener('click', () => {
   thankyou.classList.remove('hide');
@@ -35,6 +37,11 @@ expireyearinput.addEventListener('input', () => {
 
 cvcinput.addEventListener('input', () => {
   cvcdisplay.innerText = cvcinput.value;
+  // how to stop at 3 numbers?
+})
+
+cardnuminput.addEventListener('input', () => {
+  cardnumberdisplay.innerText = cardnuminput.value;
   // how to stop at 3 numbers?
 })
 
