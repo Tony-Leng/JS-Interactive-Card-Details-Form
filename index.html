@@ -9,24 +9,35 @@
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <section id="card-front">
-      <h1 id ="cardNum">0000 0000 0000 0000</h1>
-      <h2 id ="cardholder-name">Jane Doe</h2>
-      <span>
-        <h2 id ="card-expiry-month">00</h2><h2 id="slash">/</h2><h2 id ="card-expiry-year">00</h2>
-      </span>
-  </section>
+  <div id="card">
+    <section id="card-front">
+        <img src="./images/card-logo.svg" alt="">
+        <h1 id ="cardNum">0000 0000 0000 0000</h1>
+        <div id="name-expiry">
+          <p id ="cardholder-name">JANE APPLESEED</p>
+          <span id="expire-date">
+            <p id ="card-expiry-month">00</p>
+            <p id="slash">/</p>
+            <p id ="card-expiry-year">00</p>
+          </span>
+        </div>
+    </section>
 
-  <section id="card-back">
-    <h2 id ="card-cvc-display">000</h2>
-  </section>
+    <section id="card-back">
+      <p id ="card-cvc-display">000</p>
+    </section>
+  </div>
 
   <section id="user-info">
     <form action="">
@@ -55,10 +66,10 @@
   </section>
   <!-- Completed state end -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Tony Leng</a>.
+  </div> -->
   <script src="app.js"></script>
 </body>
 </html>

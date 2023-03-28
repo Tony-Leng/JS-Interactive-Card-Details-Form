@@ -40,8 +40,8 @@ cvcinput.addEventListener('input', () => {
   // how to stop at 3 numbers?
 })
 
-cardnuminput.addEventListener('input', () => {
-  cardnumberdisplay.innerText = cardnuminput.value;
+cardnumberinput.addEventListener('input', () => {
+  cardnumberdisplay.innerText = cardnumberinput.value;
   // how to stop at 3 numbers?
 })
 
