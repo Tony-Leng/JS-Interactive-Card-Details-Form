@@ -45,15 +45,19 @@
       <input id="cardholder-name-input" type="text" placeholder="e.g. Jane Appleseed">
       <p>CARD NUMBER</p>
       <input type="number" id ="card-num-input" placeholder="e.g. 1234 5678 9123 0000">
-      <div id="expire-date-input">
-        <p>Exp. Date (MM/YY)</p>
-        <input id="expire-date-month" type="number" placeholder="MM">
-        <input id="expire-date-year" type="number" placeholder="YY">
-      </div>
-      <div id="cvc-input">
-        <p>CVC</p>
-        <input id="card-cvc-input" type="text" placeholder="e.g. 123">
-      </div>
+      <div id="date-cvc">
+        <div id="expire-date-input">
+          <p>Exp. Date (MM/YY)</p>
+          <div id="month-year">
+            <input id="expire-date-month" type="number" placeholder="MM">
+            <input id="expire-date-year" type="number" placeholder="YY">
+          </div>
+        </div>
+        <div id="cvc-input">
+          <p>CVC</p>
+          <input id="card-cvc-input" type="text" placeholder="e.g. 123">
+        </div>
+    </div>
     </form>
     <button id="submit">Confirm</button>
   </section>
