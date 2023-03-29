@@ -42,7 +42,9 @@ cvcinput.addEventListener('input', () => {
 
 cardnumberinput.addEventListener('input', () => {
   cardnumberdisplay.innerText = cardnumberinput.value;
-  // how to stop at 3 numbers?
+  if (cardnumberinput.value === "") {
+    cardnumberinput.value = "0000 0000 0000 0000"
+  }
 })
 
 continuebtn.addEventListener('click', () => {
