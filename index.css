@@ -11,11 +11,28 @@ body {
   color: azure;
   font-size: 10px;
   background-size: contain;
+  display: flex;
+  width: 100%;
 }
 
 #card-front img {
   width: 20%;
+  display: inline-flex;
+  align-self: flex-start;
+  padding-top: 8px;
 }
+
+#cardinfo {
+  /* display: inline-block; */
+  align-self: flex-end;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 88%;
+  position: absolute;
+  left: 0px;
+}
+
 #card-back {
   background-image: url('./images/bg-card-back.png');
   border-radius: 5%;
@@ -33,6 +50,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
+  width: 100%;
 }
 
 #expire-date {
@@ -42,18 +60,9 @@ body {
 
 #cardNum {
   margin-bottom: 8px;
+  letter-spacing: 4px;
 }
 
-.attribution {
-  position: fixed;
-  bottom: 0;
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 @media only screen and (max-width: 375px) {
 
   body {
@@ -161,7 +170,7 @@ body {
 
   #thank-you {
     position: fixed;
-    top: 316px;
+    top: 324px;
     right: 24px;
     left: 24px;
   }
@@ -171,9 +180,9 @@ body {
   }
 
   #thankyoutext {
-    font-size: 32px;
+    font-size: 28px;
     color: hsl(278, 68%, 11%);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   #carddetails {
