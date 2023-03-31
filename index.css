@@ -5,6 +5,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.hide {
+  display: none;
+}
+
 #card-front {
   background-image: url('./images/bg-card-front.png');
   border-radius: 5%;
@@ -44,7 +48,64 @@ body {
 }
 
 #user-info {
+  position: fixed;
+  top: 240px;
+  width: auto;
+  left: 1000px;
   position: absolute;
+}
+
+#cardholder-name-input, #card-num-input {
+  border-color: lightgray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 93.5%;
+}
+
+#date-cvc {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+#month-year {
+  display: flex;
+  width: 25%;
+  margin-right: 0;
+}
+
+#expire-date-month {
+  width: 40px;
+  border-color: lightgray;
+  border-radius: 10px;
+  margin-right: 8px;
+  padding: 10px;
+}
+
+#expire-date-year {
+  width: 40px;
+  border-color: lightgray;
+  border-radius: 10px;
+  margin-right: 8px;
+  padding: 10px;
+}
+
+#card-cvc-input {
+  width: auto;
+  border-color: lightgray;
+  border-radius: 10px;
+  margin-left: 0;
+  padding: 10px;
+}
+
+#submit {
+  background-color: hsl(278, 68%, 11%);
+  color: azure;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding: 24px 0;
+  font-size: 16px;
 }
 
 #name-expiry {
@@ -119,7 +180,6 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     width: 93.5%;
-    /* width: 100%; */
   }
 
   #date-cvc {
