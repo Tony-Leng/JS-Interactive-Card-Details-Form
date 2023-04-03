@@ -62,8 +62,11 @@ body {
 }
 
 #card-cvc-display {
-  z-index: 1;
-  font-size: 36px;
+  z-index: 3;
+  font-size: 18px;
+  position: absolute;
+  top: 78px;
+  left: 316px;
 }
 
 #user-info {
@@ -144,18 +147,17 @@ body {
   letter-spacing: 4px;
 }
 
-#card-cvc-display {
+/* #card-cvc-display {
   position: absolute;
-  top: 500px;
+  top: 200px;
   left: 300px;
-}
+} */
 
 /* THANK YOU DESKTOP */
 
 #thank-you {
   position: fixed;
   top: 224px;
-  /* right: 24px; */
   left: 1000px;
 }
 
@@ -235,6 +237,7 @@ body {
     position: absolute;
     top: 58px;
     left: 224px;
+    font-size: 12px;
   }
 
   #user-info {
