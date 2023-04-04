@@ -21,6 +21,7 @@ confirm.addEventListener('click', () => {
   // need to implement if statement to ensure all fields are entered //
 })
 
+
 cardholdernameinput.addEventListener('input', () => {
   cardholdernamedisplay.innerText = cardholdernameinput.value;
 })

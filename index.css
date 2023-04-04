@@ -19,7 +19,7 @@ body {
   padding: 12px 16px;
   background-repeat: no-repeat;
   color: azure;
-  font-size: 10px;
+  font-size: 16px;
   background-size: contain;
   display: flex;
   width: 100%;
@@ -147,11 +147,6 @@ body {
   letter-spacing: 4px;
 }
 
-/* #card-cvc-display {
-  position: absolute;
-  top: 200px;
-  left: 300px;
-} */
 
 /* THANK YOU DESKTOP */
 
@@ -197,13 +192,13 @@ body {
   /* margin-right: 24px; */
 }
 
+/* ================== MOBILE ======================== */
 @media only screen and (max-width: 376px) {
 
   body {
     background-image: url('./images/bg-main-mobile.png');
     background-repeat: no-repeat;
     overflow-x: hidden;
-    width: auto;
     font-size: 12px;
   }
   .hide {
