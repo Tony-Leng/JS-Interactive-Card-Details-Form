@@ -15,12 +15,19 @@ const continuebtn = document.querySelector('#continue');
 const cardnumberinput = document.querySelector('#card-num-input');
 const cardnumberdisplay = document.querySelector('#cardNum');
 
+function format(s) {
+  return s.toString().replace(/\d{4}(?=.)/g, "$& ");
+}
+
+function setCardNumber(e) {
+  cardnumberdisplay.innerText = format(e.target.value);
+}
+
+
 confirm.addEventListener('click', () => {
   thankyou.classList.remove('hide');
   userinfo.classList.add('hide');
-  // need to implement if statement to ensure all fields are entered //
 })
-
 
 cardholdernameinput.addEventListener('input', () => {
   cardholdernamedisplay.innerText = cardholdernameinput.value;
@@ -28,25 +35,17 @@ cardholdernameinput.addEventListener('input', () => {
 
 expiremonthinput.addEventListener('input', () => {
   expiremonthdisplay.innerText = expiremonthinput.value;
-  // how to stop at 2 numbers?
 })
 
 expireyearinput.addEventListener('input', () => {
   expireyeardisplay.innerText = expireyearinput.value;
-  // how to stop at 2 numbers?
 })
 
 cvcinput.addEventListener('input', () => {
   cvcdisplay.innerText = cvcinput.value;
-  // how to stop at 3 numbers?
 })
 
-cardnumberinput.addEventListener('input', () => {
-  cardnumberdisplay.innerText = cardnumberinput.value;
-  if (cardnumberinput.value === "") {
-    cardnumberinput.value = "0000 0000 0000 0000"
-  }
-})
+cardnumberinput.addEventListener('keyup', setCardNumber)
 
 continuebtn.addEventListener('click', () => {
   location.reload();

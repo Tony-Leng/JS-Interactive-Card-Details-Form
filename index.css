@@ -30,6 +30,19 @@ body {
   width: 400px;
 }
 
+#cardNumber {
+  display: flex;
+}
+
+.cardNum {
+  margin-left: 12px;
+  letter-spacing: 4px;
+}
+
+#cardNum1 {
+  letter-spacing: 4px;
+}
+
 #card-front img {
   width: 20%;
   display: inline-flex;
