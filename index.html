@@ -48,18 +48,24 @@
       <p>CARDHOLDER NAME</p>
       <input id="cardholder-name-input" type="text" placeholder="e.g. Jane Appleseed" required>
       <p>CARD NUMBER</p>
-      <input id ="card-num-input" type="number" placeholder="e.g. 1234 5678 9123 0000" required>
+      <input
+      id ="card-num-input"
+      type="number"
+      placeholder="e.g. 1234 5678 9123 0000"
+      oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+      maxlength="16"
+      required>
       <div id="date-cvc">
         <div id="expire-date-input">
           <p>Exp. Date (MM/YY)</p>
           <div id="month-year">
             <input
-            id="expire-date-month"
             type="number"
+            placeholder="MM"
             minlength="2"
             maxlength="2"
-            placeholder="MM"
-            oninput="if(this.value.length > this.maxlength) this.value=this.value.slice(0, this.maxlength)"
+            id="expire-date-month"
+            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             required>
             <input
             id="expire-date-year"
@@ -67,12 +73,20 @@
             minlength="2"
             maxlength="2"
             placeholder="YY"
+            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             required>
           </div>
         </div>
         <div id="cvc-input">
           <p>CVC</p>
-          <input id="card-cvc-input" type="number" minlength="3" maxlength="3" placeholder="e.g. 123" required>
+          <input
+          id="card-cvc-input"
+          type="number"
+          minlength="3"
+          maxlength="3"
+          placeholder="e.g. 123"
+          oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          required>
         </div>
     </div>
     </form>
